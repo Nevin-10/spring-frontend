@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/spring-frontend/static/css/main.e19eaf76.css",
+    "main.js": "/spring-frontend/static/js/main.930ad72a.js",
+    "static/js/453.2bc12144.chunk.js": "/spring-frontend/static/js/453.2bc12144.chunk.js",
+    "index.html": "/spring-frontend/index.html",
+    "main.e19eaf76.css.map": "/spring-frontend/static/css/main.e19eaf76.css.map",
+    "main.930ad72a.js.map": "/spring-frontend/static/js/main.930ad72a.js.map",
+    "453.2bc12144.chunk.js.map": "/spring-frontend/static/js/453.2bc12144.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e19eaf76.css",
+    "static/js/main.930ad72a.js"
+  ]
+}
