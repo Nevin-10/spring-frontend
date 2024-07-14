@@ -12,7 +12,7 @@ const BlogApp = () => {
 
     const fetchPosts = async () => {
         try {
-            const response = await fetch('https://skillful-encouragement-production.up.railway.app/blog/getAll');
+            const response = await fetch('https://blogweek1.azurewebsites.net/blog/getAll');
             const data = await response.json();
             setPosts(data.map(post => ({ ...post, editing: false, updatedEntry: post.entry })));
         } catch (error) {
@@ -23,7 +23,7 @@ const BlogApp = () => {
     const handleCreate = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('https://skillful-encouragement-production.up.railway.app/blog/create', {
+            const response = await fetch('https://blogweek1.azurewebsites.net/blog/create', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -43,7 +43,7 @@ const BlogApp = () => {
 
     const handleDelete = async (postId) => {
         try {
-            const response = await fetch(`https://skillful-encouragement-production.up.railway.app/blog/delete/${postId}`, {
+            const response = await fetch(`https://blogweek1.azurewebsites.net/blog/delete/${postId}`, {
                 method: 'POST',
             });
             if (!response.ok) {
@@ -77,7 +77,7 @@ const BlogApp = () => {
 
     const handleUpdate = async (postId, updatedEntry) => {
         try {
-            const response = await fetch(`https://skillful-encouragement-production.up.railway.app/blog/update/${postId}`, {
+            const response = await fetch(`https://blogweek1.azurewebsites.net/blog/update/${postId}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
